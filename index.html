@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Movie Catalogue</title>
+</head>
+<body>
+  <h1 class="visually-hidden">Movie catalogue site</h1>
+  <h1 class="h1 text-center mb-4">Movie catalogue</h1>
+  <div class="container-lg d-flex row flex-row mb-4">
+    <div class="sidebar col-4">
+      <div class="form-container  mb-4">
+        <form action="#" method="GET" class="form ">
+          <input type="text" class="fs-6 form-control form__input mb-3 p-1 text-secondary" value="ave">
+          <input type="text" class="fs-6 form-control form__input mb-3 p-1 text-secondary" value="5">
+          <select name="genres" class="fs-6 form-select p-1 text-secondary mb-3" aria-label="Genras">
+            <option value="All" selected>All</option>
+            <option value="Latest">Latest</option>
+            <option value="On Trend">On trend</option>
+          </select>
+          <select name="Rating" aria-label="Select a rating" class="form-select mb-3">
+            <option value="Rating" selected disabled>Rating (high to low)</option>
+            <option value="1">Random</option>
+            <option value="2">Less popular</option>
+            <option value="3">The preference of the East</option>
+            <option value="4">Popular in west</option>
+            <option value="5">Favoured by everyone</option>
+          </select>
+
+          <button type="submit" class="btn btn-primary text-white w-100 p-1 btn-sm" aria-label="Search">Search</button>
+        </form>
+      </div>
+      <div class="bookmarks">
+          <h3 class="fs-2 mb-3">Bookmarked Movies</h3>
+          <div class="bookmark__item border border-secondary p-2 fs-6">
+            <p class="mb-1 fw-bold">Avengers: Infinity War</p>
+            <button type="btn" class="btn-sm btn btn-danger">Remove</button>
+          </div>
+          <div class="bookmark__item border border-secondary p-2 fs-6 border-top-0">
+            <p class="mb-1 fw-bold">The Avengers</p>
+            <button type="btn" class="btn-sm btn btn-danger">Remove</button>
+          </div>
+          <div class="bookmark__item border border-secondary p-2 fs-6 border-top-0">
+            <p class="mb-1 fw-bold">12 Years a Slave</p>
+            <button type="btn" class="btn-sm btn btn-danger">Remove</button>
+          </div>
+      </div>
+    </div>
+    <div class="col-8 justify-content-around">
+      <p class="fs-5 fw-bold mb-1">Search results: 39</p>
+      <p class="p-3 alert-success info">Use the form on the left to search for  a movie.</p>
+      <div class="card-wrapper row gx-0 row-cols-2 ">
+        <div class="card col-6">
+          <div class="card-body p-0">
+            <img src="./img/maxresdefault.jpg" class="card-img-top" alt="The avengers: Infinity War" title="The avengers: Infinity War">
+            <div class="card-content p-3">
+              <h5 class="card-title mb-2">The avengers: Infinity War</h5>
+              <p class="card-subtitle d-flex align-items-center mb-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar2-fill me-2" viewBox="0 0 16 16">
+                  <path d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5zM2.545 3h10.91c.3 0 .545.224.545.5v1c0 .276-.244.5-.546.5H2.545C2.245 5 2 4.776 2 4.5v-1c0-.276.244-.5.545-.5z"/>
+                </svg>
+                2018
+              </p>
+              <span class="card-text d-flex align-items-center">
+                <img src="./img/star-solid.svg" class="me-1" alt="rate-icon" width="20" height="20">
+                8.7
+              </span>
+              <div class="mt-3 card-btns d-flex">
+                <button type="button" class=" card-link btn btn-outline-primary fs6 p-1" data-bs-toggle="modal" data-bs-target="#avengersInfinity">Watch trailer</button>
+                <button type="button" class=" card-link btn btn-outline-info fs6 p-1" data-bs-toggle="modal" data-bs-target="#infinityInfo">More Info</button>
+                <button type="button" class=" card-link btn btn-outline-success fs6 p-1">Bookmark</button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card col-6">
+          <div class="card-body p-0">
+            <img src="./img/l-intro-1601069930.jpg" class="card-img-top" alt="The avengers" title="The avengers">
+            <div class="card-content p-3">
+              <h5 class="card-title">The Avengers</h5>
+              <p class="card-subtitle d-flex align-items-center mb-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar2-fill me-2" viewBox="0 0 16 16">
+                  <path d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5zM2.545 3h10.91c.3 0 .545.224.545.5v1c0 .276-.244.5-.546.5H2.545C2.245 5 2 4.776 2 4.5v-1c0-.276.244-.5.545-.5z"/>
+                </svg>
+                2012
+              </p>
+              <span class="card-text d-flex align-items-center">
+                <img src="./img/star-solid.svg" class="me-1" alt="rate-icon" width="20" height="20">
+                8.1
+              </span>
+              <div class="mt-3 card-btns d-flex">
+                <button type="button" class=" card-link btn btn-outline-primary fs6 p-1" data-bs-toggle="modal" data-bs-target="#trailerAvengers">Watch trailer</button>
+                <button type="button" class=" card-link btn btn-outline-info p-1" data-bs-toggle="modal" data-bs-target="#avengersInfo">More Info</button>
+                <button type="button" class=" card-link btn btn-outline-success p-1">Bookmark</button>
+
+              </div>
+            </div>
+          </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="avengersInfinity">
+    <div class="modal-dialog d-flex justify-content-center align-items-center">
+      <div class="modal-body">
+        <div class="modal-content">
+          <iframe width="876" height="500" src="https://www.youtube.com/embed/QwievZ1Tx-8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="trailerAvengers">
+    <div class="modal-dialog d-flex justify-content-center align-items-center">
+      <div class="modal-body">
+        <div class="modal-content">
+          <iframe width="900" height="500" src="https://www.youtube.com/embed/eOrNdBpGMv8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade " id="infinityInfo">
+    <div class="modal-dialog  modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header btn-light align-items-start">
+          <img src="./img/infinity-logo.png" alt="infinityWar" width="200" >
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body ">
+          <p >Avengers: Infinity War is a 2018 American superhero film based on the Marvel Comics superhero team the Avengers. Produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures, it is the sequel to The Avengers (2012) and Avengers: Age of Ultron (2015), and the 19th film in the Marvel Cinematic Universe (MCU). Directed by Anthony and Joe Russo and written by Christopher Markus and Stephen McFeely, the film features an ensemble cast including Robert Downey Jr., Chris Hemsworth, Mark Ruffalo, Chris Evans, Scarlett Johansson, Benedict Cumberbatch, Don Cheadle, Tom Holland, Chadwick Boseman, Paul Bettany, Elizabeth Olsen, Anthony Mackie, Sebastian Stan, Danai Gurira, Letitia Wright, Dave Bautista, Zoe Saldana, Josh Brolin, and Chris Pratt. In the film, the Avengers and the Guardians of the Galaxy attempt to prevent Thanos from collecting the six all-powerful Infinity Stones as part of his quest to kill half of all life in the universe.
+  
+            The film was announced in October 2014 as Avengers: Infinity War – Part 1. The Russo brothers came on board to direct in April 2015, and a month later Markus and McFeely had signed on to write the script for the film, which draws inspiration from Jim Starlin's 1991 comic book The Infinity Gauntlet and Jonathan Hickman's 2013 comic book Infinity. In 2016, Marvel shortened the title to Avengers: Infinity War. Filming began in January 2017 at Pinewood Atlanta Studios in Fayette County, Georgia, with a large cast consisting mostly of actors reprising their roles from previous MCU films, including Brolin as Thanos. The production lasted until July 2017, shooting back-to-back with a direct sequel, Avengers: Endgame (2019). Additional filming took place in Scotland, the Downtown Atlanta area, and New York City. With an estimated budget of $325–400 million, the film is one of the most expensive films ever made.
+            
+            Avengers: Infinity War premiered in Los Angeles on April 23, 2018, and was released in the United States on April 27, as part of Phase Three of the MCU. The film received praise for Brolin's performance, visual effects, action sequences, and emotional weight, but the film was criticized for relying on previous MCU films for its story. The film was the fourth film and the first superhero film to gross over $2 billion worldwide, breaking numerous box office records, and becoming the highest-grossing film of 2018 and the fourth-highest-grossing film of all time both worldwide and in the United States and Canada. The film's visual effects were nominated at the 91st Academy Awards, 24th Critics' Choice Awards, and 72nd British Academy Film Awards. The sequel, Avengers: Endgame, was released in April 2019.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Hide</button>
+        </div>
+      </div>
+      </div>
+  </div>
+  <div class="modal fade " id="avengersInfo">
+    <div class="modal-dialog  modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header btn-light align-items-start">
+          <img src="./img/Avengers-logo.png" alt="infinityWar" width="200" >
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body ">
+          <p >Marvel's The Avengers[6] (classified under the name Marvel Avengers Assemble in the United Kingdom and Ireland),[3][7] or simply The Avengers, is a 2012 American superhero film based on the Marvel Comics superhero team of the same name. Produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures,[N 1] it is the sixth film in the Marvel Cinematic Universe (MCU). Written and directed by Joss Whedon, the film features an ensemble cast including Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth, Scarlett Johansson, and Jeremy Renner as the Avengers, alongside Tom Hiddleston, Clark Gregg, Cobie Smulders, Stellan Skarsgård, and Samuel L. Jackson. In the film, Nick Fury and the spy agency S.H.I.E.L.D. recruit Tony Stark, Steve Rogers, Bruce Banner, and Thor to form a team capable of stopping Thor's brother Loki from subjugating Earth.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Hide</button>
+        </div>
+      </div>
+      </div>
+  </div>
+  <div class="container"></div>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="./js/bootstrap.min.js"></script>
+</body>
+</html>
